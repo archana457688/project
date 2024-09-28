@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #3b3f51;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    font-style: italic;
+}
+
+nav {
+    text-align: center;
+    background-color: #444;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 5px;
+}
+
+section {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.intro {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
+
+/* Project Section */
+.projects {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 20px;
+max-width: 100%; /* Full width of container */
+margin: 0 auto;
+}
+
+.project {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 2rem;
+width: 30%; /* Three projects per row */
+transition: transform 0.3s;
+text-align: left;
+}
+
+.project:hover {
+transform: translateY(-5px);
+}
+
+.project h3 {
+font-size: 1.6rem;
+margin-bottom: 1rem;
+}
+
+.project p {
+font-size: 1rem;
+color: #555;
+}
+
+/* Center the last two boxes */
+.projects:last-of-type {
+justify-content: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+.project {
+width: 45%; /* Two boxes per row for smaller screens */
+}
+}
+
+@media (max-width: 480px) {
+.project {
+width: 100%; /* Single box per row for very small screens */
+}
+}
+
+
+
+/* Skills Section */
+.skills-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills-list li {
+    background-color: #3b3f51;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+/* Contact Section */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+form input, form textarea {
+    padding: 0.75rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+form button {
+    background-color: #3b3f51;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #555;
+}
+/* Certificates Section */
+.certificates {
+display: flex;
+flex-direction: column;
+gap: 15px;
+}
+
+.certificate {
+background-color: white;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+padding: 1rem;
+text-align: center;
+}
+
+.certificate h3 {
+font-size: 1.5rem;
+margin-bottom: 0.5rem;
+}
+
+.certificate h3 a {
+color: #3b3f51;
+text-decoration: none;
+}
+
+.certificate h3 a:hover {
+text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+    background-color: #3b3f51;
+    color: white;
+    text-align: center;
+    padding: 2rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    font-size: 1rem;
+}
